@@ -6,56 +6,56 @@
             <div class="col-sm-8 offset-sm-2 my-2">
                 <form action="post" @submit="handleRegister">
                     <div class="form-group row">
-                        <label for="inputNIM" class="float-left col-sm-2 col-form-label">NIM :</label>
-                        <div  id="nim" class="col-sm-10 validate">
+                        <label for="inputNIM" class="float-left col-sm-2 col-md-4 col-form-label">NIM :</label>
+                        <div  id="nim" class="col-sm-10 col-md-8 validate">
                             <input type="text" v-model="nim" class="form-control" id="inputNIM" @click="validateNim2" @keyup="validateNim" placeholder="Masukkan Nomor Induk Mahasiswa Anda">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputName" class="float-left col-sm-2 col-form-label">Nama :</label>
-                        <div id="name" class="col-sm-10 validate">
+                        <label for="inputName" class="float-left col-sm-2 col-md-4 col-form-label">Nama :</label>
+                        <div id="name" class="col-sm-10 col-md-8 validate">
                             <input type="text" v-model="name" class="form-control" id="inputName" @keyup="validateName"  placeholder="Masukkan Nama Lengkap Anda" >
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputKelas" class="float-left col-sm-2 col-form-label">Kelas :</label>
-                        <div id="kelas" class="col-sm-10 validate">
+                        <label for="inputKelas" class="float-left col-sm-2 col-md-4 col-form-label">Kelas :</label>
+                        <div id="kelas" class="col-sm-10 col-md-8 validate">
                             <input type="text" v-model="kelas" class="form-control" id="inputKelas" @keyup="validateKelas" placeholder="Masukkan Kelas Anda" >
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputJurusan" class="float-left col-sm-2 col-form-label">Jurusan :</label>
-                        <div id="jurusan" class="col-sm-10 validate">
+                        <label for="inputJurusan" class="float-left col-sm-2 col-md-4 col-form-label">Jurusan :</label>
+                        <div id="jurusan" class="col-sm-10 col-md-8 validate">
                             <input type="text" v-model="jurusan" class="form-control" id="inputJurusan" @keyup="validateJurusan" placeholder="Masukkan Jurusan Anda" >
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputJudul" class="float-left col-sm-2 col-form-label">Judul Skripsi :</label>
-                        <div id="judul" class="col-sm-10 validate">
+                        <label for="inputJudul" class="float-left col-sm-2 col-md-4 col-form-label">Judul Skripsi :</label>
+                        <div id="judul" class="col-sm-10 col-md-8 validate">
                             <input type="text" v-model="judul" class="form-control" id="inputJudul" @keyup="validateJudul" placeholder="Masukkan Judul Skripsi Anda" >
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputTanggal" class="float-left col-sm-2 col-form-label">Tanggal :</label>
-                        <div id="tanggal" class="col-sm-10 validate">
+                        <label for="inputTanggal" class="float-left col-sm-2 col-md-4 col-form-label">Tanggal :</label>
+                        <div id="tanggal" class="col-sm-10 col-md-8 validate">
                             <input type="date" v-model="tanggal" class="form-control" @keyup="validateTanggal" id="inputTanggal">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputJam" class="float-left col-sm-2 col-form-label">Waktu :</label>
-                        <div id="jam" class="col-sm-10 validate">
+                        <label for="inputJam" class="float-left col-sm-2 col-md-4 col-form-label">Waktu :</label>
+                        <div id="jam" class="col-sm-10 col-md-8 validate">
                             <input type="time" v-model="jam" class="form-control" @keyup="validateJam" id="inputJam">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputEmail" class="float-left col-sm-2 col-form-label">Email :</label>
-                        <div id="email" class="col-sm-10 validate">
+                        <label for="inputEmail" class="float-left col-sm-2 col-md-4 col-form-label">Email :</label>
+                        <div id="email" class="col-sm-10 col-md-8 validate">
                             <input type="email" v-model="email" class="form-control" @keyup="validateEmail" id="inputEmail" placeholder="Masukkan Email Anda" >
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputText" class="float-left col-sm-2 col-form-label">Deskripsi :</label>
-                        <div id="text" class="col-sm-10 validate">
+                        <label for="inputText" class="float-left col-sm-2 col-md-4 col-form-label">Deskripsi :</label>
+                        <div id="text" class="col-sm-10 col-md-8 validate">
                             <textarea type="text" v-model="text" class="form-control" id="inputText" @keyup="validateText" placeholder="Masukkan Deskripsi Materi Bimbingan Anda" ></textarea>
                         </div>
                     </div>
