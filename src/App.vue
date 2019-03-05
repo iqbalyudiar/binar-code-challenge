@@ -26,12 +26,12 @@ body {
     background-size: cover;
 }
 .layer{
-  position: absolute;
+  position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height: 700px;
-	max-height: 100px;
+	min-height: 200%;
+	max-height: 50%;
 	background: rgba(0,0,0,0.7);
 }
 </style>

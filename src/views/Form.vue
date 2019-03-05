@@ -3,7 +3,7 @@
         <h1 class="text-center">Form Bimbingan Skripsi</h1>
         <br>
         <div class="row">
-            <div class="col-sm-8 offset-sm-2">
+            <div class="col-sm-8 offset-sm-2 my-2">
                 <form action="post" @submit="handleRegister">
                     <div class="form-group row">
                         <label for="inputNIM" class="float-left col-sm-2 col-form-label">NIM :</label>
@@ -281,15 +281,17 @@ export default {
     h1{
         color: #ffffff;
     } */
+
     .container{
         
 	margin-top: 50px;
-	/* left: 0; */
-	/* width: 75%; */
-	min-height: 700px;
-	max-height: 100px;
+	left: 0; 
+	width: 75%; 
+	min-height: 100%;
+	max-height: 100%;
 	background: rgba(255,255,255,0.7);
     }
+    
     .alert{
         border-radius: 1rem;
     }
