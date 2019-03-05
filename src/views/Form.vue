@@ -246,11 +246,16 @@ export default {
             
             for(var i = 0; i < kirim.length; i++){
                 if(kirim[i].value == ''){
-                    alert("Harap di isi jangan ada yang kosong")
+                    const coltombol = document.getElementById('tombol');
+                    const div = document.createElement('div');
+                    div.innerHTML = ("Harap di isi jangan ada kosong")
+                    div.className = `alert alert-danger`;
+                    coltombol.append(div);
+                    setTimeout(() => document.querySelector(".alert").remove(),500)
                 } else if( i == kirim.length-1){
-                    for(var i = 0; i < 9; i++){
-                        if(kirim[i].value !== ''){
-                            kirim[i].value = '';
+                    for(var j = 0; j < 9; j++){
+                        if(kirim[j].value !== ''){
+                            kirim[j].value = '';
                         }
                     }
                 }
