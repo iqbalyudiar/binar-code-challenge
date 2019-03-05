@@ -243,15 +243,11 @@ export default {
         // Validasi Submit
         send() {
             const kirim = document.querySelectorAll('.form-control');
-            
+            var x = false;
+
             for(var i = 0; i < kirim.length; i++){
                 if(kirim[i].value == ''){
-                    const coltombol = document.getElementById('tombol');
-                    const div = document.createElement('div');
-                    div.innerHTML = ("Harap di isi jangan ada kosong")
-                    div.className = `alert alert-danger`;
-                    coltombol.append(div);
-                    setTimeout(() => document.querySelector(".alert").remove(),500)
+                    x = true;
                 } else if( i == kirim.length-1){
                     for(var j = 0; j < 9; j++){
                         if(kirim[j].value !== ''){
@@ -259,6 +255,14 @@ export default {
                         }
                     }
                 }
+            }
+            if(x == true) {
+                    const coltombol = document.getElementById('tombol');
+                    const div = document.createElement('div');
+                    div.innerHTML = ("Harap di isi jangan ada kosong")
+                    div.className = `alert alert-danger`;
+                    coltombol.append(div);
+                    setTimeout(() => document.querySelector(".alert").remove(),500)
             }
             
             
